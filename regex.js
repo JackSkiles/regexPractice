@@ -1,4 +1,5 @@
-let textHeader = document.getElementById("regexTest");
+let contDiv = document.getElementById("mainDiv").children;
+console.log(contDiv.length)
 
 let text = textHeader.textContent;
 const testText = RegExp(/(h{0}e)|e$/);
