@@ -2,7 +2,7 @@ let contDiv = document.getElementById("mainDiv").children;
 console.log(contDiv.length)
 
 // let text = textHeader.textContent;
-const testText = RegExp(/hello/);
+const testText = RegExp(/.*/);
 // console.log(text)
 let array1;
 // array1 = testText.exec(text);
