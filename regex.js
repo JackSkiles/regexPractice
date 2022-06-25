@@ -2,7 +2,7 @@ let contDiv = document.getElementById("mainDiv").children;
 console.log(contDiv.length)
 
 // let text = textHeader.textContent;
-const testText = RegExp(/e/);
+const testText = RegExp(/hello/);
 // console.log(text)
 let array1;
 // array1 = testText.exec(text);
@@ -13,7 +13,7 @@ function checkRegEx()
 {
     for(let i = 0; i < contDiv.length; i++)
     {
-        let header = document.getElementById(`regexTest${i}`)
+        let header = document.getElementById(`regexTest${i}`).textContent
         console.log(header.textContent);
         array1.push(testText.exec(header));
     }
