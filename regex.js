@@ -1,11 +1,12 @@
 let contDiv = document.getElementById("mainDiv").children;
+let secondDiv = document.getElementById("secondDiv");
 console.log(contDiv.length)
 
 // let text = textHeader.textContent;
-const testText = RegExp(/a/i);
+const testText = RegExp(/^t.*/i);
 // console.log(text)
 // array1 = testText.exec(text);
-
+matches = [];
 
 function checkRegEx()
 {
@@ -23,10 +24,11 @@ function checkRegEx()
     }
     return array1;
 }
-// checkRegEx().map(item => {
-//     console.log(item.input);
-// });
-console.log(checkRegEx());
+matches = checkRegEx();
+matches.map(item => {
+    console.log(item.input);
+});
+// console.log(checkRegEx());
 // if (textHeader == "/Welcome to Regex testing/")
 // {
 //     console.log("hello");
