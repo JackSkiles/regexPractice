@@ -1,9 +1,9 @@
 let contDiv = document.getElementById("mainDiv").children;
-let secondDiv = document.getElementById("secondDiv");
+let regexList = document.getElementById("correctList");
 console.log(contDiv.length)
 
 // let text = textHeader.textContent;
-const testText = RegExp(/^t.*/i);
+const testText = RegExp(/^T.*/);
 // console.log(text)
 // array1 = testText.exec(text);
 matches = [];
@@ -28,15 +28,15 @@ matches = checkRegEx();
 
 function appendChecks(elementName)
 {
-    let h1 = document.createElement('h1')
-    h1.textContent = `${elementName} Matches search parameters`;
+    let li = document.createElement('li')
+    li.textContent = `"${elementName}" Matches search parameters`;
     // secondDiv.appendChild()
     console.log(elementName);
     console.log('hello');
-    return h1;
+    return li;
 }
 
 matches.map(item => {
-   secondDiv.appendChild(appendChecks(item.input));
+   regexList.appendChild(appendChecks(item.input));
    console.log(item.input)
 });
