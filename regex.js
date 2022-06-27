@@ -25,11 +25,18 @@ function checkRegEx()
     return array1;
 }
 matches = checkRegEx();
+
+function appendChecks(elementName)
+{
+    let h1 = document.createElement('h1')
+    h1.textContent = `${elementName} Matches search parameters`;
+    // secondDiv.appendChild()
+    console.log(elementName);
+    console.log('hello');
+    return h1;
+}
+
 matches.map(item => {
-    console.log(item.input);
+   secondDiv.appendChild(appendChecks(item.input));
+   console.log(item.input)
 });
-// console.log(checkRegEx());
-// if (textHeader == "/Welcome to Regex testing/")
-// {
-//     console.log("hello");
-// }
